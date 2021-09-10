@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Cartões Expandidos</title>
+
+</head>
+
+<body>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SERVIÇOS</a></li>
+                <li><a href="#">AGENDAMENTOS</a></li>
+                <li><a href="#">CONTATO</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="logo1.png" id="menu">
+       </div>
+   
+    <h1>EXPLORE O MUNDO<br>AO SEU REDOR</h1>
+    <div class="container">
+        <div class="panel active" style="background-image: url('https://diariodorio.com/wp-content/uploads/2021/05/Cristo-Redentor.jpg');">
+
+            <h3>Explore o Mundo</h3>
+        </div>
+        <div class="panel" style="background-image: url('https://www.maresollazer.com.br/wp-content/uploads/2019/06/01-Rio-de-Janeiro_4-1024x894.jpg');">
+
+            <h3>Praia de Ipanema- RJ</h3>
+        </div>
+        <div class="panel" style="background-image: url('https://www.viajali.com.br/wp-content/uploads/2017/09/rio-de-janeiro-1.jpg');">
+            <h3>Praia do Farol - RJ</h3>
+        </div>
+        <div class="panel" style="background-image: url('https://www.dci.com.br/wp-content/uploads/2020/10/lencois-maranhenses-como-ir-e-dicas.jpg');">
+
+            <h3>Lençois Maranhenses</h3>
+        </div>
+        <div class="panel" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Pedra-de-santo-antonio.JPG/270px-Pedra-de-santo-antonio.JPG');">
+
+            <h3>Pedra de Santo Antonio</h3>
+        </div>
+        <div class="panel" style="background-image: url('https://www.viajali.com.br/wp-content/uploads/2017/09/rio-de-janeiro-1.jpg');">
+
+            <h3>Praia do Farol - RJ</h3>
+        </div>
+
+
+    </div>
+
+    
+
+    <script src="script.js"></script>
+    <script>
+        var menuBTN = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sidenav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right == "-250px";
+
+        menuBtn.onclick = function(){
+        if (sideNav.style.right == "-250px"){
+           sideNav.style.right = "0";
+           menu.src="close.png";
+       } 
+       else{
+           sideNav.style.right = "-250px";
+           menu.src="menu.png";
+   }
+}
+    </script>
+    
+</body>
+</html>
